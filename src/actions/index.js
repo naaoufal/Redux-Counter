@@ -2,29 +2,34 @@ export const increment = () => {
     return {
       type: "INCREMENT",
     };
-  };
+};
   
-  export const decrement = () => {
+export const decrement = () => {
     return {
       type: "DECREMENT",
     };
-  };
+};
   
-  export const reset = () => {
+export const reset = () => {
     return {
       type: "RESET",
     };
-  };
+};
   
-  export const logIn = () => {
+export const logIn = () => {
     return {
       type: "LOG_IN",
     };
-  };
+};
   
-  export const logOut = () => {
+export const logOut = () => {
     return {
       type: "LOG_OUT",
     };
-  };
+};
   
+export const getData = () => {
+    return {
+        type: "GET",
+    };
+};

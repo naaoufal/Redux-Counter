@@ -37,6 +37,10 @@ function App() {
       ) : (
         ""
       )}
+      {/* fetch api */}
+      <div>
+        <button>Fetch data</button>
+      </div>
     </div>
   );
 }
