@@ -30,6 +30,6 @@ export const logOut = () => {
   
 export const getData = () => {
     return {
-        type: "GET",
+        type: "GET_DATA",
     };
 };
