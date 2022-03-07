@@ -1,3 +1,5 @@
+import axios from "axios";
+
 export const increment = () => {
     return {
       type: "INCREMENT",
@@ -29,7 +31,18 @@ export const logOut = () => {
 };
   
 export const getData = () => {
-    return {
-        type: "GET_DATA",
-    };
+    try {
+      return async dispatch => {
+        const user = await fetch("").then(res => {
+          return res.json()
+        }).then(data => {
+          dispatch({
+            type: "GET_USERS",
+            payload: data
+          })
+        })
+      }
+    } catch (error) {
+      console.log(error)
+    }
 };
